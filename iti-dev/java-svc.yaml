@@ -3,11 +3,12 @@ kind: Service
 metadata:
   name: java-service
   labels:
-    app: my-app
+    app: java
 spec:
+  type: NodePort
   selector:
-    app: my-app           # Matches the pod labels
+    app: java
   ports:
     - protocol: TCP
-      port: 80            # Service port (inside cluster)
-      targetPort: 8080    # Container port
+      port: 8090
+      targetPort: 8090
