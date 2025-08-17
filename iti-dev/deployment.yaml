@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: java-container
-        image: java:v1
+        image: ahmedasaadrashad/iti-java:2
         ports:
         - containerPort: 8090
